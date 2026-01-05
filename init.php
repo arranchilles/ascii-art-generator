@@ -40,24 +40,6 @@ function main($argv): int {
   $width = $service->font_width * $source_file->get_x_size(); 
 
   $dest_file = create_file($dest_file_path, $width, $height); 
-
-	/*switch($file->get_type()){
-    case "jpg":
-			$image = new JPG($file->get_path());
-		break;
-
-    case "png":
-			$image= new PNG($file->get_path());
-		break;
-
-    case "gif":
-      $image = new GIF($file->get_path());
-		break;
-
-		default:
-			throw new InvalidFileType;
-
-  }*/
   
 	$service->image_to_ascii($source_file, $dest_file);
 	print("Ascii image created successfully at {$dest_file_path}");
