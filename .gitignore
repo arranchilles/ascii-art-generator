@@ -1,0 +1,7 @@
+assets/
+tests/
+test.sh
+vendor/
+.env
+composer.lock
+

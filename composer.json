@@ -1,0 +1,25 @@
+{
+    "name": "arranc/ascii-art-generator",
+    "description": "Generates ascii art from images.",
+    "type": "project",
+    "require": {
+        "symfony/console": "^7.4",
+        "phpunit/phpunit": "^12.5",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        },
+        "files": [
+            "src/Classes/Files/Utils.php",
+            "src/Utils/functions.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "arranchilles",
+            "email": "arranchilles@gmail.com"
+        }
+    ]
+}
