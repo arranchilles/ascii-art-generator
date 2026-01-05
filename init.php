@@ -43,7 +43,7 @@ function main($argv): int {
   
 	$service->image_to_ascii($source_file, $dest_file);
 	print("Ascii image created successfully at {$dest_file_path}");
-	return 1;
+	return 0;
 }
 
 main($argv);
